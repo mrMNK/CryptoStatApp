@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CryptoStatApp</string>
+    <string name="symbols_template">%s / %s</string>
+    <string name="last_update_template">Last update: %s</string>
+    <string name="max_price_label">24h high:</string>
+    <string name="min_price_label">24h low:</string>
+    <string name="price_label">Current price:</string>
+    <string name="last_market_label">Last market:</string>
+    <string name="last_updated_label">Last update:</string>
+    <string name="slash">/</string>
+
+</resources>
