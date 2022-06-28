@@ -1,8 +1,8 @@
-package com.android.cryptostatapp.pojo
+package com.android.cryptostatapp.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.android.cryptostatapp.api.ApiFactory.BASE_IMAGE_URL
+import com.android.cryptostatapp.data.network.ApiFactory.BASE_IMAGE_URL
 import com.android.cryptostatapp.utils.convertTimestampToTime
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

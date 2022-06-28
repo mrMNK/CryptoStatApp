@@ -1,4 +1,4 @@
-package com.android.cryptostatapp.api
+package com.android.cryptostatapp.data.network
 
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

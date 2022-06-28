@@ -1,12 +1,13 @@
-package com.android.cryptostatapp
+package com.android.cryptostatapp.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
-import com.android.cryptostatapp.adapter.CoinInfoAdapter
-import com.android.cryptostatapp.pojo.CoinPriceInfo
+import com.android.cryptostatapp.R
+import com.android.cryptostatapp.presentation.adapters.CoinInfoAdapter
+import com.android.cryptostatapp.data.model.CoinPriceInfo
 
 class CoinPriceListActivity : AppCompatActivity() {
 

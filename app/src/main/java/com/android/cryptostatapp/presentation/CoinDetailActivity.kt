@@ -1,14 +1,14 @@
-package com.android.cryptostatapp
+package com.android.cryptostatapp.presentation
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.android.cryptostatapp.R
 import com.squareup.picasso.Picasso
 
 class CoinDetailActivity : AppCompatActivity() {

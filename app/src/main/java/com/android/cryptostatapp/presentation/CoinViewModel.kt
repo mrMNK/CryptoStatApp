@@ -1,13 +1,13 @@
-package com.android.cryptostatapp
+package com.android.cryptostatapp.presentation
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import com.android.cryptostatapp.api.ApiFactory
-import com.android.cryptostatapp.database.AppDatabase
-import com.android.cryptostatapp.pojo.CoinPriceInfo
-import com.android.cryptostatapp.pojo.CoinPriceInfoRawData
+import com.android.cryptostatapp.data.network.ApiFactory
+import com.android.cryptostatapp.data.database.AppDatabase
+import com.android.cryptostatapp.data.model.CoinPriceInfo
+import com.android.cryptostatapp.data.model.CoinPriceInfoRawData
 import com.google.gson.Gson
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
