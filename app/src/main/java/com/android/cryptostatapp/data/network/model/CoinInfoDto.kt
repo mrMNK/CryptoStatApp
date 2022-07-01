@@ -1,4 +1,4 @@
-package com.android.cryptostatapp.data.model
+package com.android.cryptostatapp.data.network.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -8,7 +8,7 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "full_price_list")
-data class CoinPriceInfo (
+data class CoinInfoDto (
     @SerializedName("TYPE")
     @Expose
     val type: String?,
@@ -32,7 +32,7 @@ data class CoinPriceInfo (
 
     @SerializedName("PRICE")
     @Expose
-    val price: Double?,
+    val price: String?,
 
     @SerializedName("LASTUPDATE")
     @Expose
@@ -76,11 +76,11 @@ data class CoinPriceInfo (
 
     @SerializedName("HIGHDAY")
     @Expose
-    val highDay: Double?,
+    val highDay: String?,
 
     @SerializedName("LOWDAY")
     @Expose
-    val lowDay: Double?,
+    val lowDay: String?,
 
     @SerializedName("OPEN24HOUR")
     @Expose
