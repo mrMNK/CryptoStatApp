@@ -8,8 +8,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.android.cryptostatapp.R
-import com.android.cryptostatapp.data.network.ApiFactory.BASE_IMAGE_URL
-import com.android.cryptostatapp.utils.convertTimestampToTime
 import com.squareup.picasso.Picasso
 
 class CoinDetailActivity : AppCompatActivity() {
@@ -33,10 +31,9 @@ class CoinDetailActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.tvMinPrice).text = it.lowDay.toString()
                 findViewById<TextView>(R.id.tvMaxPrice).text = it.highDay.toString()
                 findViewById<TextView>(R.id.tvLastMarket).text = it.lastMarket
-                findViewById<TextView>(R.id.tvLastUpdate).text =
-                    convertTimestampToTime(it.lastUpdate)
+                findViewById<TextView>(R.id.tvLastUpdate).text = it.lastUpdate
                 val ivLogoCoin = findViewById<ImageView>(R.id.ivLogoCoin)
-                Picasso.get().load(BASE_IMAGE_URL + it.imageUrl).into(ivLogoCoin)
+                Picasso.get().load(it.imageUrl).into(ivLogoCoin)
             }
         }
     }
