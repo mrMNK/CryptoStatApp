@@ -5,7 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import androidx.work.ExistingWorkPolicy
 import androidx.work.WorkManager
-import com.android.cryptostatapp.data.database.AppDatabase
 import com.android.cryptostatapp.data.database.CoinInfoDao
 import com.android.cryptostatapp.data.mapper.CoinMapper
 import com.android.cryptostatapp.data.workers.RefreshDataWorker
